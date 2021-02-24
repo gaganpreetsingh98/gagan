@@ -1,0 +1,20 @@
+<head>
+    <style>
+            div {
+            height: 100px;
+            width: 100px;
+            background-color: hotpink;
+    </style>
+    <script>
+        function abc() {
+
+            document.getElementById('div1').style.backgroundColor = 'purple';
+            document.getElementById('div1').style.height = '100px';
+            document.getElementById('div1').style.width = '100px';
+
+        }
+    </script>
+</head>
+<div id="div1" onmouseenter="abc()">
+</div>
+<button onclick="abc()">click</button>
