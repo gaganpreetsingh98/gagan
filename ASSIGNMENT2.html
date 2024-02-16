@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Size Adjuster</title>
+    <script>var textSize = 14; // Base text size
+
+        function increaseTextSize() {
+            textSize++;
+            document.getElementById('text').style.fontSize = textSize + 'px';
+        }
+
+        function decreaseTextSize() {
+            if (textSize > 1) { // Prevent text size from becoming 0 or negative
+                textSize--;
+                document.getElementById('text').style.fontSize = textSize + 'px';
+            }
+        }
+    </script>
+    
+</head>
+<body><button id="increase" onclick="increaseTextSize('increase')">increase</button>
+    <button id="decrease" onclick="decreaseTextSize('decrease')">decrease</button>
+    <p id="text">myself gaganpreet singh i am from punjab INDIA</p>
+    </p>
+</body>
+</html>
